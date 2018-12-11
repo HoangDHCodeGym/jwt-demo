@@ -15,6 +15,7 @@ public class LoadDatabase {
         return args -> {
             log.info("Preloading" + contactService.save(new Contact("Hoang", "Manager")));
             log.info("Preloading" + contactService.save(new Contact("Alpha", "Employee")));
+            //Some other changes
         };
     }
 }
