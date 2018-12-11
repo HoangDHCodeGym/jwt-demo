@@ -14,21 +14,19 @@ public class ContactServiceImpl implements ContactService {
 
     @Override
     public List<Contact> findAll() {
-        return null;
+        return contactRepository.findAll();
     }
 
     @Override
     public Contact findOne(Long id) {
-        return null;
+        return contactRepository.findById(id).get();
     }
 
     @Override
     public Contact save(Contact contact) {
-        return null;
+        return contactRepository.save(contact);
     }
 
     @Override
-    public void deleteById(Long id) {
-
-    }
+    public void deleteById(Long id) { contactRepository.deleteById(id);}
 }
